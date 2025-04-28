@@ -1,0 +1,85 @@
+/* STYLES TO DO:  */
+/* "ul" and "li" */
+/*  h1, h2, h3, title */
+/* body, head, container class */
+/* color, background, links */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  background: white;
+  padding: 20 px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.experience {
+  margin-top: 20px;
+}
+.job {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.job h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.company {
+  font-weight: normal;
+  color: #555;
+  font-style: italic;
+}
+.location-date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
