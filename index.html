@@ -15,13 +15,34 @@
     </style>
   </head>
 
+  <!-- <span> can be used in <ul>-<li> combination to start new text from new line -->
+
   <!-- TODO: How to contact me: LinkedIn, Email, phone. ==> Make cool good looking icons. -->
   <!-- Work on LeetCode. You have everything you need -->
 
   <body>
-    <div class="container">
-      <h1>Hondamir Umarov</h1>
-      <h2>Cybersecurity Analyst | SOC Analyst | Software Engineer</h2>
+    <div class="header">
+      <div class="banner"></div>
+      <div class="profile-info">
+        <img src="" alt="" class="profile-photo" />
+        <h2>Cybersecurity Analyst | SOC Analyst | Software Engineer</h2>
+        <h1>Hondamir Umarov</h1>
+        <p>Lincoln, NE | Open to opportunities</p>
+
+        <div class="header-options">
+          <h2>Download resume:</h2>
+          <a href="">Download Cyber Resume</a>
+          <a href="">Download SE Resume</a>
+          <h2>Contact me:</h2>
+          <a href="">Contact me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- TODO: Change this h2. Make emphasis only on Major: Cybersec, SE, maybe AI -->
+      <!-- TODO: Add profile picture. -->
+      <!-- TODO: Add nav bar that on-click will scroll to the corresponding heading. -->
       <p>
         I am a cybersecurity and IT professional with a background in system administration, IT support, and secure
         communication systems. My expertise includes full-stack development, cloud technologies, and enterprise security
@@ -39,6 +60,7 @@
       </p>
 
       <h2>Certificates:</h2>
+      <!-- TODO: Make this section better. The current look is not that good -->
       <ul>
         <button class="accordion">ISC2 Certified in Cybersecurity (CC)</button>
         <div class="panel">
@@ -101,18 +123,18 @@
       <h2>Professional experience</h2>
       <div class="experience">
         <div class="job">
-          <h3>Learning Space Associate <span class="company">University of Nebraska-Lincoln</span></h3>
+          <h3>Learning Space Associate - <span class="company">University of Nebraska System</span></h3>
           <p class="location-date">Lincoln, NE | 01/2025 - Present</p>
           <ul class="job-bullets">
-            <li>Programmed AMX devices to satisfy A/V requirements for classroms in university</li>
+            <li>Programmed AMX devices to satisfy A/V requirements for university's classrooms</li>
             <li>Assisted in troubleshooting technical difficulties professors experienced</li>
             <li>Set up all the needed equipment for classrooms</li>
-            <li>Conducted regular classroms check ups to ensure meeting standard</li>
+            <li>Conducted regular classrooms check ups to ensure meeting standard</li>
             <li><b>Technologies/Solutions Utilized: </b>AMX Programming, DVX, NetLinx, Scripting</li>
           </ul>
-          <br /><br /><br />
+          <br /><br />
 
-          <h3>Cybersecurity Intern <span class="company">MorganFranklin Consulting</span></h3>
+          <h3>Cybersecurity Intern - <span class="company">MorganFranklin Consulting</span></h3>
           <p class="location-date">Remote | 06/2024 - 08/2024</p>
           <ul class="job-bullets">
             <li>Engaged in incident response addressing phishing attack and enhancing client’s email security</li>
@@ -123,9 +145,9 @@
               <i>Red Team, Incident Response, Thread Hunting, Azure, CrowdStrike, Splunk</i>
             </li>
           </ul>
-          <br /><br /><br />
+          <br /><br />
 
-          <h3>QA Automation Engineer Intern <span class="company">First National Bank of Omaha</span></h3>
+          <h3>QA Automation Engineer Intern - <span class="company">First National Bank of Omaha</span></h3>
           <p class="location-date">Omaha, NE | 05/2023 - 08/2023</p>
           <ul class="job-bullets">
             <li>
@@ -141,9 +163,9 @@
               <i>Javascript, Python, Cucumber, Cypress, IVR, TestComplete, Swagger, Selenium</i>
             </li>
           </ul>
-          <br /><br /><br />
+          <br /><br />
 
-          <h3>Software Engineering Intern <span class="company">Fiserv</span></h3>
+          <h3>Software Engineering Intern - <span class="company">Fiserv</span></h3>
           <p class="location-date">Raikes School, Design Studio | 08/2022 - 05/2023</p>
           <ul class="job-bullets">
             <li>
@@ -155,9 +177,9 @@
               <b>Technologies/Solutions Utilized: </b><i>TypeScript, React, Remix, Java, Spring Boot, Azure SQL</i>
             </li>
           </ul>
-          <br /><br /><br />
+          <br /><br />
 
-          <h3>Teaching Assistant <span class="company">University of Nebraska-Lincoln</span></h3>
+          <h3>Teaching Assistant - <span class="company">University of Nebraska-Lincoln</span></h3>
           <p class="location-date">Lincoln, NE | 08/2021 - 05/2024</p>
           <ul class="job-bullets">
             <li>Aided students with Java-related problems and facilitated finding bugs in students' code</li>
@@ -180,6 +202,8 @@
       </ul>
 
       <h2>Education</h2>
+
+      <div class="education"></div>
 
       <h2>Download resume:</h2>
 
