@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main/styles.css" />
     <title>Hondamir Umarov - Cybersecurity enthusiast & Software Engineer</title>
 
     <style>
@@ -20,136 +20,133 @@
   <!-- TODO: How to contact me: LinkedIn, Email, phone. ==> Make cool good looking icons. -->
   <!-- Work on LeetCode. You have everything you need -->
 
+  <!-- TODO: navbar aligned, header. -->
+
   <body>
-    <!-- Summary, Certificates, Skills (Tech, soft), Experience (Professional, Personal project), Education, Contact me -->
-
-    <nav>
-      <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#exp">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact me</a></li>
-      </ul>
-    </nav>
-
-    <div class="header">
-      <div class="banner"></div>
-      <div class="profile-info">
-        <img src="" alt="" class="profile-photo" />
-        <h2>Cybersecurity Analyst | SOC Analyst | Software Engineer</h2>
-        <h1>Hondamir Umarov</h1>
-        <p>Lincoln, NE | Open to opportunities</p>
-
-        <div class="header-options">
-          <h2>Download resume:</h2>
-          <a href="">Download Cyber Resume</a>
-          <a href="">Download SE Resume</a>
-          <h2>Contact me:</h2>
-          <a href="">Contact me</a>
+    <header>
+      <div class="header">
+        <!-- <div class="banner"></div> -->
+        <div class="profile-info">
+          <img src="img/pictures/1698375340178.jpeg" alt="" class="profile-photo" />
+          <h1>Hondamir Umarov</h1>
+          <h4>Cybersecurity Analyst | SOC Analyst | Software Engineer</h4>
+          <p>Lincoln, NE | Open to opportunities</p>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- Summary, Certificates, Skills (Tech, soft), Experience (Professional, Personal project), Education, Contact me -->
 
     <div class="main-content">
+      <div class="navbar">
+        <a href="#summary">Summary</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#skills">Skills</a>
+        <div class="dropdown">
+          <button class="dropbtn">Experience<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#professional">Professional</a>
+            <a href="#projects">Projects</a>
+          </div>
+        </div>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+      </div>
       <!-- TODO: Change this h2. Make emphasis only on Major: Cybersec, SE, maybe AI -->
       <!-- TODO: Add profile picture. -->
       <!-- TODO: Add nav bar that on-click will scroll to the corresponding heading. -->
-      <p>
+      <!-- TODO: Change Font style from Arial, to something better. -->
+      <!-- TODO: Make Droptown text aligned troughout the whole thing -->
+
+      <!-- TODO: Remove <hr /> since it is no longer necessary. -->
+      <!-- TODO: Change color of selected menu in nav bar. -->
+      <!-- <p>
         I am a cybersecurity and IT professional with a background in system administration, IT support, and secure
         communication systems. My expertise includes full-stack development, cloud technologies, and enterprise security
         solutions. I have experience working in SOC environments, implementing RAID storage solutions, and securing
         communications using RSA and AES encryption.
-      </p>
+      </p> -->
 
-      <h2 id="summary">Summary</h2>
-      <p>
-        Highly motivated and enthusiastic professional with a dedication to the field of Cybersecurity focused on
-        penetration testing, vulnerability scanning, and cyber resilience.
-        <!-- Track record of over 5 years in software development.  -->
-        Recently committed to synergize programming expertise with cybersecurity understanding to enhance digital
-        security. Proficiency covers the entire web application lifecycle, from creation to testing.
-      </p>
+      <div class="summary" style="text-align: justify">
+        <h2 id="summary">Summary</h2>
+        <p>
+          Highly motivated and enthusiastic professional with a dedication to the field of Cybersecurity focused on
+          penetration testing, vulnerability scanning, and cyber resilience.
+          <!-- Track record of over 5 years in software development.  -->
+          Recently committed to synergize programming expertise with cybersecurity understanding to enhance digital
+          security. Proficiency covers the entire web application lifecycle, from creation to testing.
+        </p>
+      </div>
 
-      <h2 id="certificates">Certificates:</h2>
-      <!-- TODO: Make this section better. The current look is not that good -->
-      <ul>
-        <button class="accordion">ISC2 Certified in Cybersecurity (CC)</button>
-        <div class="panel">
+      <div class="certificates">
+        <h2 id="certificates">Certificates:</h2>
+        <div class="CC">
+          <!-- TODO: Make this section better. The current look is not that good -->
+
+          <!-- <button class="accordion">ISC2 Certified in Cybersecurity (CC)</button> -->
+          <!-- <div class="panel"></div> -->
+          <img src="img/icons/CC_icon.png" alt="CC badge" height="100" width="100" />
+          <!-- <p><b>ISC2 Certified in Cybersecurity (CC)</b></p>
           <p><strong>Certification ID:</strong> 123456789</p>
-          <p><strong>Expiration Date:</strong> 12/31/2025</p>
-          <a href="https://www.isc2.org/Verify" target="_blank" class="verify-link">Verify Certificate</a>
+          <p><strong>Expiration Date:</strong> 12/31/2025</p> -->
+          <p>
+            <br />
+            <b>ISC2 Certified in Cybersecurity (CC)</b> <br />
+            <b>Certification ID:</b> 123456789 <br />
+            <b>Expiration Date:</b> 12/31/2025 <br />
+            <a
+              href="https://www.credly.com/badges/6563e641-d99d-46c6-bebc-d9b4b34ec1f2/linked_in_profile"
+              target="_blank"
+              class="verify-link"
+              >Verify Certificate</a
+            >
+          </p>
         </div>
+      </div>
 
-        <li>ISC2 Certified in Cybersecurity (CC)</li>
-      </ul>
+      <!-- <hr /> -->
 
       <!-- Version #1 -->
-      <h2 id="skills">Skills</h2>
-      <h3>Tech</h3>
-      <ul>
-        <li><b>Backend: </b>Java, C#, JavaScript, Python, Unix, Shell Script</li>
-        <li><b>Frontend: </b>TypeScript, React, BootStrap, Spring</li>
-        <li><b>Database: </b>SQL, MySQL, ORM</li>
-        <li><b>MS Product: </b>Word, Excel, PowerPoint, Teams, Access, Visio</li>
-        <li><b>Operating System (OS): </b>Kali Linux, Ubuntu, MacOS, Windows 7+</li>
-        <li><b>Cloud Computing: </b>AWS, Azure, Docker</li>
-        <li><b>Tools: </b>Git, Cypress, TestComplete, Selenium, IVR</li>
-        <li><b>Techniques: </b>Agile, Scrum, MVC and iDesign</li>
-        <li><b>Scripting: </b>Unix, Shell Script, PowerShell, Bash, CLI</li>
-      </ul>
+      <div class="skills">
+        <h2 id="skills">Skills</h2>
+        <h3 id="tech-skill">Tech</h3>
+        <ul>
+          <li><b>Backend: </b>Java, C#, JavaScript, Python, Unix, Shell Script</li>
+          <li><b>Frontend: </b>TypeScript, React, BootStrap, Spring</li>
+          <li><b>Database: </b>SQL, MySQL, ORM</li>
+          <li><b>MS Product: </b>Word, Excel, PowerPoint, Teams, Access, Visio</li>
+          <li><b>Operating System (OS): </b>Kali Linux, Ubuntu, MacOS, Windows 7+</li>
+          <li><b>Cloud Computing: </b>AWS, Azure, Docker</li>
+          <li><b>Tool: </b>Git, Cypress, TestComplete, Selenium, IVR</li>
+          <li><b>Technique: </b>Agile, Scrum, MVC and iDesign</li>
+          <li><b>Scripting: </b>Unix, Shell Script, PowerShell, Bash, CLI</li>
+        </ul>
 
-      <h3>Soft</h3>
-      <ul>
-        <li>Creativity</li>
-        <li>Adaptability</li>
-      </ul>
+        <h3 id="soft-skill">Soft</h3>
+        <ul>
+          <li>Creativity</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
 
-      <!-- Version #1 -->
-      <!-- <h2>Professional experience</h2>
-      <h3>Technical Support Specialist</h3>
-      <h5>University of Nebraska-Linoln</h5>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul> -->
+      <!-- TODO: classes to style: job, extra-info, the-bullets,  -->
 
-      <!-- Version #2 from ChatGPT -- REALLY GOOD -->
-      <!-- <h2>Professional experience</h2>
-      <div class="experience">
-        <div class="job">
-          <h3>title <span class="company">Company name</span></h3>
-          <p class="location-date">Omaha, NE | Date</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div> -->
-
-      <!-- Additional professional line (ChatGPT version) -->
-      <h2 id="exp">Professional experience</h2>
+      <h2 id="professional">Professional experience</h2>
       <div class="experience">
         <div class="job">
           <h3>Learning Space Associate - <span class="company">University of Nebraska System</span></h3>
-          <p class="location-date">Lincoln, NE | 01/2025 - Present</p>
-          <ul class="job-bullets">
+          <p class="extra-info">Lincoln, NE | 01/2025 - Present</p>
+          <ul class="the-bullets">
             <li>Programmed AMX devices to satisfy A/V requirements for university's classrooms</li>
             <li>Assisted in troubleshooting technical difficulties professors experienced</li>
             <li>Set up all the needed equipment for classrooms</li>
             <li>Conducted regular classrooms check ups to ensure meeting standard</li>
             <li><b>Technologies/Solutions Utilized: </b>AMX Programming, DVX, NetLinx, Scripting</li>
           </ul>
-          <!-- <br> -->
 
           <h3>Cybersecurity Intern - <span class="company">MorganFranklin Consulting</span></h3>
-          <p class="location-date">Remote | 06/2024 - 08/2024</p>
-          <ul class="job-bullets">
+          <p class="extra-info">Remote | 06/2024 - 08/2024</p>
+          <ul class="the-bullets">
             <li>Engaged in incident response addressing phishing attack and enhancing client’s email security</li>
             <li>Participated in proactive threat hunting to identify and mitigate cybersecurity risks</li>
             <li>Performed Red Team operations, exfiltrating data to identify client’s security vulnerabilities</li>
@@ -160,8 +157,8 @@
           </ul>
 
           <h3>QA Automation Engineer Intern - <span class="company">First National Bank of Omaha</span></h3>
-          <p class="location-date">Omaha, NE | 05/2023 - 08/2023</p>
-          <ul class="job-bullets">
+          <p class="extra-info">Omaha, NE | 05/2023 - 08/2023</p>
+          <ul class="the-bullets">
             <li>
               Made API calls from Postman and Cypress with Cucumber to examine the functionality of debit cards’
               activation
@@ -177,8 +174,8 @@
           </ul>
 
           <h3>Software Engineering Intern - <span class="company">Fiserv</span></h3>
-          <p class="location-date">Raikes School, Design Studio | 08/2022 - 05/2023</p>
-          <ul class="job-bullets">
+          <p class="extra-info">Raikes School, Design Studio | 08/2022 - 05/2023</p>
+          <ul class="the-bullets">
             <li>
               Developed a system to help bank users control and securely access their accounts in 3rd-party applications
             </li>
@@ -190,8 +187,8 @@
           </ul>
 
           <h3>Teaching Assistant - <span class="company">University of Nebraska-Lincoln</span></h3>
-          <p class="location-date">Lincoln, NE | 08/2021 - 05/2024</p>
-          <ul class="job-bullets">
+          <p class="extra-info">Lincoln, NE | 08/2021 - 05/2024</p>
+          <ul class="the-bullets">
             <li>Aided students with Java-related problems and facilitated finding bugs in students' code</li>
             <li>Assessed student's performance in labs, assignments, and in-class participation</li>
             <li>Assisted students throughout semester with Computer Science II related problems</li>
@@ -200,24 +197,159 @@
             </li>
           </ul>
         </div>
+
+        <div class="projects">
+          <h2 id="projects">Personal projects</h2>
+          <p><b>CIA-Compliant Secure Communication Server</b></p>
+          <p class="extra-info">03/2024 - 05/2024</p>
+          <ul class="the-bullets">
+            <li>
+              Built a secure phone-to-IoT command server in Python, applying RSA encryption for phones and AES for IoT
+              devices
+            </li>
+            <li>
+              Established mutual authentication between Server and IoT devices through nonce exchange and hash
+              verification
+            </li>
+            <li>
+              Conducted security analysis with ProVerif to ensure communication resilience against potential attacks
+            </li>
+            <li><b>Technologies/Solutions used:</b> <i>Python, RSA, AES, Proverif, IoT</i></li>
+          </ul>
+
+          <p><b>OAuth 2.0 Web Security</b></p>
+          <p class="extra-info">10/2023 - 12/2023</p>
+          <ul class="the-bullets">
+            <li>
+              Designed and implemented a small-scale website to showcase the functionality of the OAuth 2.0 system
+            </li>
+            <li>Provided a practical demonstration of secure user authentication and authorization processes</li>
+            <li>
+              Demonstrated proficiency in web development using Flask for routing and database integration with SQL Lite
+            </li>
+            <li><b>Technologies/Solutions used:</b> <i>Flask, SQLite, OAuth 2.0</i></li>
+          </ul>
+
+          <p><b>RSA Cracker</b></p>
+          <p class="extra-info">09/2023 - 12/2023</p>
+          <ul class="the-bullets">
+            <li>Implemented 2 RSA cracking algorithms: Fermat's Factorization and General Number Field Sieve (GNFS)</li>
+            <li>
+              Conducted a comprehensive analysis of time performance for each algorithm across varying RSA key sizes
+            </li>
+            <li>
+              Demonstrated strong programming skills by converting mathematical algorithms into efficient Python code
+            </li>
+            <li>
+              <b>Technologies/Solutions used:</b>
+              <i>Python, RSA, General Number Field Sieve (GNFS), Fermat's Factorization</i>
+            </li>
+          </ul>
+
+          <p><b>Voting System Website</b></p>
+          <p class="extra-info">01/2022 - 05/2022</p>
+          <ul class="the-bullets">
+            <li>Engineered a full-stack web app, that lets students vote for the best professor and advisor</li>
+            <li>
+              Connected frontend to backend using REST API and managed versions with Git as the version control system
+            </li>
+            <li>
+              <b>Technologies used:</b> <i>C#, ASP.NET, React, Git, MySQL and tested with unit, integration tests</i>
+            </li>
+          </ul>
+
+          <p><b>Chain of Stores Modernization</b></p>
+          <p class="extra-info">01/2021 - 08/2021</p>
+          <ul class="the-bullets">
+            <li>Generated ~$150,000 in annual revenue by improving the outdated business model of an online store</li>
+            <li>Led a team of 5 to work on the backend with an opportunity to present a better UI in future</li>
+            <li><b>Technologies used:</b> <i>Java, OOP, MySQL, JDBC, JSON, XML, JUnit testing</i></li>
+          </ul>
+        </div>
+        <!-- <br /> -->
       </div>
 
-      <h2>Personal projects</h2>
-      <h3></h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div class="education">
+        <h2 id="education">Education</h2>
+        <p><b>University of Nebraska-Lincoln (UNL), Lincoln, NE</b></p>
+        <p class="degree">Bachelor of Science in Computer Science with a minor in Mathematics | GPA 3.7</p>
+        <p class="extra-info">08/2020 - 05/2024</p>
+      </div>
 
-      <h2 id="education">Education</h2>
+      <div class="contact">
+        <h2 id="contact">Contact me:</h2>
+        <!-- <input type="email" name="email" id="email" /> -->
+        <label for="email">Send me email:</label>
+        <!-- <input type="text" name="email" id="email" /> -->
+        <!-- <input type="text" name="emailToSend" id="emailToSend" class="theEmail2" /> -->
+        <textarea
+          name="emailToSend"
+          id="emailToSend"
+          class="theEmail"
+          placeholder="Enter your message here..."
+        ></textarea>
 
-      <div class="education"></div>
+        <input type="button" class="sendEmail" value="Send" onclick="msg('Your email sent!')" />
+        <!-- <input type="submit" value="Send email" onclick="msg('Your email sent!')" /> -->
 
-      <h2>Download resume:</h2>
+        <!-- TODO: Make  <hr> thinner -->
 
-      <h2 id="contact">Contact me:</h2>
+        <script>
+          function msg() {
+            alert("Your email send!");
+            // TODO: set limit on how many times a user can send a message. Check by session and x amount of sends in 4 hours.
+          }
+
+          // TODO: I think you know what to do here. It's time to learn JS!
+          // TODO: Happy exploring!!
+
+          // function encryption()
+        </script>
+      </div>
+
+      <div class="resume">
+        <h2 id="resume">Download Resume:</h2>
+        <p>
+          <u><b>Cyber Resume</b></u>
+        </p>
+
+        <!-- Version #1 -->
+        <!-- <a href="/documents/Cyber/Cyber Resume.pdf" target="_blank" rel="noopener">
+        <img src="/img/blue_pdf_icon.png" alt="Cyber Resume pdf" style="width: 50px" />
+      </a> -->
+
+        <!-- # Version #2 - link to webpage -->
+        <a href="/documents/Cyber/Cyber Resume.pdf" target="_blank" rel="noopener">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/file-type-19/512/file__pdf__document_-1024.png"
+            alt="Cyber Resume pdf"
+            style="width: 50px"
+        /></a>
+        <a href="/documents/Cyber/Cyber Resume.docx" target="_blank" rel="noopener">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/file-type-19/512/file__doc__word__document_-1024.png"
+            alt="Cyber Resume pdf"
+            style="width: 50px"
+        /></a>
+        <p>
+          <u><b>Software Engineer Resume</b></u>
+        </p>
+
+        <!-- Version #2, link to webpage -->
+        <a href="/documents/Software Engineer /SE Resume.pdf" target="_blank" rel="noopener">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/boxicons-solid-vol-2/24/bxs-file-pdf-512.png"
+            alt="Software Engineer Resume pdf"
+            style="width: 50px"
+        /></a>
+        <!-- <img src="/img/black_pdf_icon.png" alt="Software Engineer Resume pdf" style="width: 50px" /> -->
+        <a href="/documents/Software Engineer /SE Resume.docx" target="_blank" rel="noopener">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/boxicons-solid-vol-2/24/bxs-file-doc-1024.png"
+            alt="Software Engineer Resume word"
+            style="width: 50px"
+        /></a>
+      </div>
     </div>
   </body>
 </html>

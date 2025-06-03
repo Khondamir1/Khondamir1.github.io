@@ -1,0 +1,395 @@
+/* STYLES TO DO:  */
+/* "ul" and "li" */
+/*  h1, h2, h3, title */
+/* body, head, container class */
+/* color, background, links */
+
+/* TODO: I Don't understand how this works */
+/* NEW Stuff here */
+:root {
+  --primary-bg: #272757;
+  --secondary-bg: #505081;
+  --accent: #8686ac;
+  --deep-bg: #0f0e47;
+  --text-light: #f4f4f4;
+  /* --text-accent: #8686ac; */
+  --text-accent: #22222b;
+
+  --color0: #162044;
+  --color1: #17bebb;
+  --color2: #f1e9da;
+  --color3: #cc2936;
+  --color4: #347fc4;
+}
+
+body,
+header {
+  /* font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 20 px; */
+
+  /* NEW Color HERE */
+  /* background-color: var(--primary-bg); */
+  background-color: #347fc4;
+  color: var(--text-accent);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* cursor: vertical-text; */
+}
+
+.main-content {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* cursor: vertical-text; */
+}
+
+h1,
+h2 {
+  /* color: #333; */
+
+  /* NEW COLOR HERE */
+  color: var(--text-accent);
+}
+
+/* NEW Stuff fully */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* NEW Stuff fully */
+a:hover {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+/* NEW Stuff fully */
+/* button {
+  background-color: var(--accent);
+  color: var(--primary-bg);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+/* TODO: FUNNY STUFF TODO: cursor, on the webpage */
+/* button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+/* NEW Stuff fully */
+/* Button for Certificates */
+button:hover {
+  background-color: var(--text-light);
+  color: var(--primary-bg);
+}
+
+/* .download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+} */
+
+/* WAS NOT USED */
+/* label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+} */
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .experience {
+  margin-top: 20px;
+} */
+
+.job,
+.education,
+.skills,
+.summary,
+.certificates,
+.projects,
+.contact {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0c0a0a;
+}
+
+.the-bullets {
+  /* text-align: left; */
+  padding-left: 20px;
+}
+
+.CC {
+  display: flex;
+  gap: 10px;
+}
+
+.company {
+  font-weight: normal;
+  color: #555;
+  font-style: italic;
+}
+.extra-info {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+  /* padding-top: 0%;
+  padding-bottom: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.accordion {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.panel {
+  padding: 10px 15px;
+  display: none;
+  background-color: #671919;
+  border-left: 3px solid #007bff;
+}
+
+.accordion.active + .panel {
+  display: block;
+}
+
+.verify-link {
+  color: var(--color4);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  /* width: 800px; */
+  height: 240px;
+  background-color: #e1e9f0;
+  margin-bottom: 40px;
+}
+
+.banner {
+  width: 100%;
+  height: 180px;
+  /* background-image: url("/img/pictures/422188.jpg") no-repeat center center fixed; */
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-info {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.profile-info h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+}
+
+.profile-info h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: gray;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* .header-buttons {
+  margin-top: 15px;
+} */
+
+.header-buttons .button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #0a66c2;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.header-buttons .button:hover {
+  background-color: #004182;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+  /* width: 0px; */
+  background-color: var(--color0);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  /* background-color: red; */
+  background-color: var(--color3);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9; */
+  background-color: var(--color0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  /* color: black; */
+  color: var(--color2);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--color3);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.degree {
+  font-size: 0.9em;
+  color: #000000;
+  margin-bottom: 10px;
+  /* padding-top: 0%;
+  padding-bottom: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.hr {
+  height: 1px;
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.sendEmail {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  color: gray;
+  padding: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.theEmail {
+  width: 780px;
+  height: 180px;
+  /* height 100px == 6 lines */
+  size: 40;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  resize: none;
+}
+
+/* NEW STUFF */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
